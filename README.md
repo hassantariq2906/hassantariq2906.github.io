@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+## CV
+<body>
+<strong>Education</strong>
+<ul>
+  <li>Beconhouse School System <span> (Matric,2014)</span> </li>
+  <li>Concordia <span>(Matric,2016) </span></li>
+  <li>FAST NUCES <span>(BSCS, Still doing) </span></li>
+</ul>
+  <strong>Interests</strong>
+<ol>
+  <li>Futsal</li>
+  <li>Table Tennis</li>
+  <li>Programming</li>
+  <li>Graphic Designing</li>
+</ol>
+  <strong>Acheivements</strong>
+<ul>
+  <li> 1 Month experience as an internee at Vanilla Arcade. </li>
+  <li> Member of 2nd position holding team in Futsal competition, FAST. </li>
+  <li> Stood 2nd in Concordia, Walton Campus on the basis of FSc part-I result. </li>
+  <li> Designed logos and flex for many companies and organizations </li>
+</ul>
+<strong>Favourite Qutation</strong>
+<p>Try not to become the 
+<em>man of success</em> but rather try to be the<em> man of value </em>. 
+</p>
+  <strong>To visit my Facebook Account</strong>
+<a
+href="https://facebook.com/249hassan"> click this link</a>
 
-You can use the [editor on GitHub](https://github.com/hassantariq2906/hassantariq2906.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hassantariq2906/hassantariq2906.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</body>
