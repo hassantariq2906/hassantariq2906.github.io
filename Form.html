@@ -1,0 +1,64 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="Style Sheet.css">
+</head>
+
+    <body>
+        <div id="outterbody">
+                <form action="/action_page.php" name = "Form">
+                    Please enter your name <input id = "Fname" type="text" name="fname" value = ""><br>
+                    Please enter your age <input id = "Lname" type="number" name="lname"><br>
+                </form>
+                <form>
+                    <input id = "Male" type="radio" name="gender" value="male" checked> Male<br>
+                    <input id = "Female" type="radio" name="gender" value="female"> Female<br>
+                    <input id = "Other" type="radio" name="gender" value="other"> Other
+                </form>
+                <input id="Done" type="submit" value="Submit">  
+                <p id = "TY" style="display: none">Thank you,</p>
+                <h4 id = "Ok"></h4>
+                <p id = "TYs" style="display: none"> for your time!<br>Press the following button to go to my CV.</p>
+                <button  onclick="location.href = 'Web%20CV.html';"id = "TYss" style="display: none;" >CV</button>
+                
+            </div>
+
+
+        
+    </body>
+</html>
+<script src = "jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        var name, age, gender;
+        $("#Done").on('click',function(){   
+            
+            
+            name = $('#Fname').val();
+            if(name === "")
+            {
+                $("#Ok").html("Oops! I think you forgot to enter your name");
+            }
+            else{
+                age = $('#Lname').val();
+                $("#Ok").html(name);
+                $("#TY").fadeToggle(600);
+                $("#TYs").fadeToggle(600);
+                $("#TYss").fadeToggle(600);
+            }
+            
+            
+
+        });
+        $("#Male").on('click',function(){   
+            gender = "Male";
+        });
+        $("#Other").on('click',function(){   
+            gender = "Other";
+        });
+        $("#Female").on('click',function(){   
+            gender = "Female";
+        });
+        
+        
+    });
+</script>
