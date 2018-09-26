@@ -78,6 +78,7 @@
                 </ul>
             </div>
           </div>
+                  <button style="color: red; font-size: 0.2in" id="DeleteEdu">Hide Education</button>
           <div id="edu">
             <div class="up">
             <h2>EDUCATION<h2>
@@ -101,6 +102,7 @@
           
           
           </div>
+                  <button style="color: red; font-size: 0.2in" id="DeleteLang">Hide Language</button>
           <div id="lan">
             <div class="up">
             <h2>LANGUAGES<h2>
@@ -135,7 +137,7 @@
 <script src = "jquery.js"></script>
 <script>
     $(document).ready(function(){
-        var ShowOrHideExp = false;
+        var ShowOrHideExp = false, ShowOrHideLang = false, ShowOrHideEdu = false;
         var ChangePic = 0;
         $("#FB").on('click',function(){
             $("#FBnote").toggle(200).delay(10000).toggle(200);    
@@ -180,6 +182,34 @@
             {
                 $("#DeleteExp").html("Hide Experience");
                 ShowOrHideExp = false;
+            }
+        });
+          $("#DeleteLang").on('click',function(){
+            
+            $("#lan").toggle(200);  
+            if(ShowOrHideLang === false)
+            {
+                $("#DeleteLang").html("Show Language");
+                ShowOrHideLang = true;
+            }
+            else
+            {
+                $("#DeleteLang").html("Hide Language");
+                ShowOrHideLang = false;
+            }
+        });
+          $("#DeleteEdu").on('click',function(){
+            
+            $("#edu").toggle(200);  
+            if(ShowOrHideEdu === false)
+            {
+                $("#DeleteEdu").html("Show Education");
+                ShowOrHideEdu = true;
+            }
+            else
+            {
+                $("#DeleteEdu").html("Hide Education");
+                ShowOrHideEdu = false;
             }
         });
 
