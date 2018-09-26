@@ -23,31 +23,31 @@
                    </div>
                    <div class="data">
                    
-                   <p id = "Hey" style="display: none">Address: IH-112, PAF, Falcon Complex, Gulberg III, Lahore</br>Phone: 0336-3427726</br></p>
+                   <p id = "Hey" style="display: none">Address: IH-112, PAF, Falcon Complex, Gulberg III, Lahore</p>
                    </div>
          </div>
           <div id="2" class="elements">
                      <div class="img1">
-                        <img src="Facebook.png"/>
+                        <img id = "FB" src="Facebook.png"/>
                    </div>
-                   <div class="data">
+                   <div class="data" style="color:white">
                     <p><a href="https://www.facebook.com/249hassan"> 249Hassan </a></p>
                     </div>
          </div>
           <div id="3" class="elements">
                       <div class="img1">
-                        <img src="Email.png"/>
+                        <img id = "Email" src="Email.png"/>
                    </div>
                    <div class="data">
-                   <p>L164177@lhr.nu.edu.pk</p>
+                   <p style = "display:none" id = "Emailnote">L164177@lhr.nu.edu.pk</p>
                    </div>
          </div>
           <div id="4"class="elements">
                    <div class="img1">
-                        <img src="Phone.png"/>
+                        <img id = "Phone" src="Phone.png"/>
                    </div>
                    <div class="data">
-                    <p>+92-336-3427726</p>
+                    <p style = "display:none" id = "Phonenote">+92-336-3427726</p>
                     </div>
          </div>
 
@@ -135,6 +135,12 @@
 <script>
     $(document).ready(function(){
         var ShowOrHideExp = false, ChangePic = false;
+        $("#Phone").on('click',function(){
+            $("#Phonenote").toggle(200).delay(10000).toggle(200);    
+        });  
+        $("#Email").on('click',function(){
+            $("#Emailnote").toggle(200).delay(10000).toggle(200);    
+        });
         $("#Button").on('click',function(){
             $("#Hey").toggle(200).delay(10000).toggle(200);    
         });
