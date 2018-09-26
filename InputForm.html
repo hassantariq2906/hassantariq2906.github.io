@@ -151,7 +151,9 @@
         $("#Picture").on('mouseover',function(){
             if(ChangePic === 0)
             {
-                $(this).attr('src','Pictures2.jpg');   
+                $(this).attr('src','Pictures2.jpg'); 
+                  $(this).attr('width','200px'); 
+                  $(this).attr('height','200px'); 
                 ChangePic = 1;
             }
             else if (ChangePic === 1)
