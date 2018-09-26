@@ -134,7 +134,8 @@
 <script src = "jquery.js"></script>
 <script>
     $(document).ready(function(){
-        var ShowOrHideExp = false, ChangePic = false;
+        var ShowOrHideExp = false;
+        var ChangePic = 0;
         $("#FB").on('click',function(){
             $("#FBnote").toggle(200).delay(10000).toggle(200);    
         });
@@ -148,16 +149,21 @@
             $("#Hey").toggle(200).delay(10000).toggle(200);    
         });
         $("#Picture").on('mouseover',function(){
-            if(ChangePic === false)
+            if(ChangePic === 0)
             {
-                $(this).attr('src','https://scontent.flhe2-1.fna.fbcdn.net/v/t1.0-9/31239473_2058146561139687_1138349327089877067_n.jpg?_nc_cat=110&_nc_eui2=AeHS_deJw6d-tBjayM1ZWv255zpE6b6AbX7-h9GSWkDv8XzPNOR5aPLRK8ALV61SdC3j8MezJpdfDNvsobGz5NQmuDw1h35MiWpcjRD9jkamKyAph5oYuOmbpwRnwzrDJME&oh=a45b8836fc212a8360be7fae2c54ec8c&oe=5C1DE771');   
-                ChangePic = true;
+                $(this).attr('src','Pictures2');   
+                ChangePic = 1;
             }
-            else
+            else if (ChangePic === 1)
             {
-                $(this).attr('src','https://scontent.flhe2-1.fna.fbcdn.net/v/t1.0-9/18057957_1884478648506480_1379448447324364189_n.jpg?_nc_cat=108&_nc_eui2=AeH9P82uF2aH501qzB6GyX8dDmnoDeB2DhBlY4yF_zMVFfHqYq3sVXDqo42WuL40IiBn0ryRudpOHtWpxmMvj_PZTcKarywcOHODPUg_XCIh-Ke-BAqsafK_hokl9INJa4c&oh=696ae8a49deb3212cf8ed8c25254970f&oe=5C2CC7F7');   
-                ChangePic = false;
+                $(this).attr('src','Pictures3');   
+                ChangePic = 2;
             }
+            else if (ChangePic === 2)
+            {
+                $(this).attr('src','Pictures3');   
+                ChangePic = 0;
+            } 
         });
         $("#DeleteExp").on('click',function(){
             
