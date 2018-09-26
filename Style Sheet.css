@@ -134,13 +134,3 @@ text-align:center;
 margin-top:20px;	
 }
 
-@media screen and (max-width: 800px)
-{
-	
-	#leftside
-	{
-		width:0px;
-		background-color:#yellow;
-	}
-		
-}
