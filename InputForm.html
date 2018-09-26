@@ -30,8 +30,8 @@
                      <div class="img1">
                         <img id = "FB" src="Facebook.png"/>
                    </div>
-                   <div class="data" style="color:white">
-                    <p><a href="https://www.facebook.com/249hassan"> 249Hassan </a></p>
+                   <div class="data" >
+                    <p style="color:white; display:none" id="FBnote"><a href="https://www.facebook.com/249hassan"> 249Hassan </a></p>
                     </div>
          </div>
           <div id="3" class="elements">
@@ -135,6 +135,9 @@
 <script>
     $(document).ready(function(){
         var ShowOrHideExp = false, ChangePic = false;
+        $("#FB").on('click',function(){
+            $("#FBnote").toggle(200).delay(10000).toggle(200);    
+        });
         $("#Phone").on('click',function(){
             $("#Phonenote").toggle(200).delay(10000).toggle(200);    
         });  
